@@ -24,7 +24,7 @@ router.route('/join')
 
         var errors = req.validationErrors();
         if (errors) {
-            res.render('register', {
+            res.render('join', {
                 name: req.body.name,
                 email: req.body.email,
                 errorMessages: errors
