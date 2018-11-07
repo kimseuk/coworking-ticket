@@ -1,0 +1,21 @@
+<form class="form-signin" method="post">
+    {{#each errorMessages}}
+        <div class="alert alert-danger">
+            {{this.msg}}
+        </div>
+    {{/each}}
+
+    <h2 class="form-signin-heading text-center">Join</h2>
+    <br/>
+
+    <input type="text" name="name" class="form-control" placeholder="name" require="" autofocus="">
+    <br/>
+    <input type="email" name="email" class="form-control" placeholder="email" require="" autofocus="">
+    <br/>
+    <input type="password" name="password" class="form-control" placeholder="password" require="" >
+    <br/>
+    <input type="password" name="confirmPassword" class="form-control" placeholder="confirm password" require="">
+    <br/>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Join</button>
+
+</form>
